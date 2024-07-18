@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody Wave</title>
+    <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1ceade140b.js" crossorigin="anonymous"></script>
+  </head>
+
+
+
+  <body>
+    <header>
+      <div class="menu_side">
+        <h1>PlayList</h1>
+        <div class="playlist">
+           <h4 class="active"><span></span><i class="fa-solid fa-music"></i>PlayList</h4>
+           <h4><span></span><i class="bi fa-solid fa-music"></i>Last Listening</h4>
+           <h4><span></span><i class="bi fa-solid fa-music"></i>Recommended</h4>
+        </div>
+        <div class="menu_song">
+          <li class="songItem">
+            <span>01</span>
+            <img src="img\1.jpg" alt="">
+            <h5>Beautiful World <br>
+                <div class="subtitle">宇多田</div>
+            </h5>
+            <i class="bi playListPlay fa-solid fa-play" id="1"></i>
+        </li>
+
+        <li class="songItem">
+          <span>02</span>
+          <img src="img\2.jpg" alt="">
+          <h5>One Last Kiss <br>
+              <div class="subtitle">宇多田</div>
+          </h5>
+          <i class="bi playListPlay fa-solid fa-play" id="2"></i>
+      </li>
+
+      <li class="songItem">
+        <span>03</span>
+        <img src="img\2.jpg" alt="">
+        <h5>言って <br>
+            <div class="subtitle">ヨルシカ</div>
+        </h5>
+        <i class="bi playListPlay fa-solid fa-play" id="3"></i>
+    </li>
+
+    <li class="songItem">
+      <span>04</span>
+      <img src="img\2.jpg" alt="">
+      <h5>斜陽 <br>
+          <div class="subtitle">ヨルシカ</div>
+      </h5>
+      <i class="bi playListPlay fa-solid fa-play" id="4"></i>
+  </li>
+
+  <li class="songItem">
+    <span>05</span>
+    <img src="img\2.jpg" alt="">
+    <h5>星座になれたら <br>
+        <div class="subtitle">結束バンド</div>
+    </h5>
+    <i class="bi playListPlay fa-solid fa-play" id="5"></i>
+</li>
+
+<li class="songItem">
+  <span>06</span>
+  <img src="img\2.jpg" alt="">
+  <h5>転がる岩、君に朝が降る <br>
+      <div class="subtitle">結束バンド</div>
+  </h5>
+  <i class="bi playListPlay fa-solid fa-play" id="6"></i>
+</li>
+
+<li class="songItem">
+  <span>07</span>
+  <img src="img\2.jpg" alt="">
+  <h5>送り狼 <br>
+      <div class="subtitle">natsumi</div>
+  </h5>
+  <i class="bi playListPlay fa-solid fa-play" id="7"></i>
+</li>
+
+<li class="songItem">
+  <span>08</span>
+  <img src="img\2.jpg" alt="">
+  <h5>カタオモイ - From THE FIRST TAKE    <br>
+      <div class="subtitle">Aimer</div>
+  </h5>
+  <i class="bi playListPlay fa-solid fa-play" id="8"></i>
+</li>
+
+<li class="songItem">
+  <span>09</span>
+  <img src="img\2.jpg" alt="">
+  <h5>青春コンプレックス <br>
+      <div class="subtitle">結束バンド</div>
+  </h5>
+  <i class="bi playListPlay fa-solid fa-play" id="9"></i>
+</li>
+<li class="songItem">
+  <span>10</span>
+  <img src="img\2.jpg" alt="">
+  <h5>Sincerely <br>
+      <div class="subtitle">TRUE</div>
+  </h5>
+  <i class="bi playListPlay fa-solid fa-play" id="10"></i>
+</li>
+<li class="songItem">
+  <span>11</span>
+  <img src="img\2.jpg" alt="">
+  <h5>βίος <br>
+      <div class="subtitle">小林未郁</div>
+  </h5>
+  <i class="bi playListPlay fa-solid fa-play" id="11"></i>
+    </li>
+
+ </div>
+</div>
+          
+      
+            
+      
+
+      <div class="song_side">
+            <nav>
+              <ul>
+                    <li>Discover <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li> 
+              </ul>
+
+              <div class="search">
+                <i class="bi fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Music...">
+              </div>
+
+              <div class="user">
+                  <img src="img\user.jpg" alt="">
+              </div>
+            </nav>
+                 <div class="content">
+                      <h1>Beautiful World</h1>
+                      <p>もしも願い一つだけ叶うなら<br>君の側で眠らせて　どんな場所でもいいよ</p>
+                      <div class="buttons">
+                        <button>PLAY</button>
+                        <button>FOLLOW</button>
+                    </div>
+                 </div>     
+              
+      </div>
+
+      <div class="master_play">
+        <div class="wave" id="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+
+        <img src="img/2.jpg" alt="" id="poster_master_play">
+        <h5 id="title">
+          One Last Kiss
+            <div class="subtitle">宇多田</div>
+        </h5>
+            <div class="icon">
+              <i class="bi shuffle fa-solid fa-music"></i>
+              <i class="bi fa-solid fa-backward" id="back"></i>
+              <i class="bi fa-solid fa-play" id="masterPlay"></i>
+              <i class="bi fa-solid fa-forward" id="next"></i>
+              <i class="bi fa-solid fa-cloud-arrow-down" id="download_music"></i>
+            </div>
+          <span id="currentStart">0:00</span>
+          <div class="bar">
+              <input type="range"  id="seek" min="0" max="100">
+              <div class="bar2" id="bar2"></div>
+              <div class="dot"></div>
+          </div>
+          <span id="currentEnd">0:30</span>
+          <div class="vol">
+            <i class="bi fa-solid fa-volume-high" id="vol_icon"></i>
+            <input type="range" min="0" max="100" id="vol">
+            <div class="vol_bar"></div>
+            <div class="dot" id="vol_dot"></div>
+          </div>
+      </div>
+
+    </header>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
